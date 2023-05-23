@@ -16,34 +16,29 @@ body {
     margin: 0 auto;
 }
 
-header {
-    width: 100%;
-    padding: 1rem 0;
+a:link {
+    color: #040D05;
+    text-decoration: none;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    position: relative;
-    z-index: 10;
+a:visited {
+    color: #45594A;
 }
 
-nav a {
-    margin-right: 1rem; 
+a:focus {
+    color: #294973;
+    text-decoration: underline;
+}
+a:hover {
+    color: #3973BF;
+    text-decoration: underline;
 }
 
-header .contact {
-    margin-left: auto;
-    margin-right: 0;
+a:active {
+    color: #294973;
+    text-decoration: underline;
 }
 
-/**
-section {
-    margin: 110px 0;
-}
-**/
 h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
@@ -65,9 +60,46 @@ h3 {
 
 h4 {
     font-family: 'Roboto', serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
 }
+
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+nav a:last-child {
+    padding: 14px 24px;
+    background-color: #040D05;
+    color: white;
+    border-radius: 25px;
+}
+
+header .contact {
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 h1 strong {
     font-weight: 600;
@@ -85,7 +117,20 @@ h1 strong {
 }
 
 .about p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.about a {
+    padding: 14px 24px;
+    color: #040D05;
+    background-color: #CEDEF2;
+    border-radius: 25px;
+}
+
+.about a:hover {
+    color: #CEDEF2;
+    background-color: #040D05;
+    text-decoration: none;
 }
 
 .portrait {
@@ -102,7 +147,7 @@ h1 strong {
 .portContainers{
     margin-top: 80px;
     width: 100%;
-    height: 500px;
+    min-width: 818px;
     display: flex;
     justify-content: space-between;
 }
@@ -114,7 +159,7 @@ h1 strong {
 
 .portItem h3{
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color:#040D05;
     color: white;
     display: inline-block;
@@ -123,15 +168,108 @@ h1 strong {
     left: 200px;
 }
 
+.portItem h4 {
+    position: relative;
+    bottom: 60px;
+}
+
 .portImages{
     width: 250px;
     height: 250px;
-    border-radius: 30px;
+    border-radius: 25px;
     overflow: hidden;
-    background-color: blue;
 }
 
 .portImages img {
     height: 100%;
     width: auto;
+}
+
+.itemTwo{
+    margin-top: 55px;
+}
+.itemThree{
+    margin-top: 110px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skillContainer {
+    margin: 80px 0 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillContainer h5 {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.skillContainer h5:first-child {
+    background-color: #CEDEF2;
+}
+
+.skillContainer h5:nth-child(2) {
+    background-color: #F2D3AC;
+}
+
+.skillContainer h5:nth-child(3) {
+    background-color: #8C6046;
+    color: white;
+}
+
+.skillContainer h5:nth-child(4) {
+    background-color: #93A680;
+}
+
+.skillContainer h5:nth-child(5) {
+    background-color: #040D05;
+    color: white;
+}
+
+.skillContainer h5:nth-child(6) {
+    background-color: #45594A;
+    color: white;
+}
+
+.skillContainer h5:nth-child(6) {
+    background-color: #294973;
+    color: white;
+}
+
+.skillContainer h5:nth-child(7) {
+    background-color: #45594A;
+    color: white;
+}
+
+.skillContainer h5:nth-child(8) {
+    background-color: #261911;
+    color: white;
+}
+
+.skillContainer h5:nth-child(9) {
+    background-color: #F0F2DF;
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    left: 0;
+    background-color: #040D05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    display: inline-block;
+    background-color: white;
+    padding: 14px 24px;
+    border-radius: 25px;
+    color: #040D05;
+    text-decoration: none;
 }
