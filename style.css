@@ -109,15 +109,17 @@ h1 strong {
     width: 100%;
     display: flex;
     justify-content: space-between; 
+    flex-direction: row;
+    margin-top: 110px;
 }
 
 .description {
-    margin-top: 110px;
     min-width: 380px;
 }
 
 .about p {
     margin-bottom: 40px;
+    max-width: 350px;
 }
 
 .about a {
@@ -137,6 +139,7 @@ h1 strong {
     margin-top: 50px;
     width: 550px;
     height: auto;
+    padding-left: 20px;
 }
 
 .portfolio {
@@ -150,6 +153,7 @@ h1 strong {
     min-width: 818px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .portItem{
@@ -272,4 +276,119 @@ footer a {
     border-radius: 25px;
     color: #040D05;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 950px) {
+    p {
+        font-size: 18px;
+    }
+
+    .about {
+        flex-direction: column-reverse; 
+    }
+
+    .portrait {
+        margin: 0 auto;
+        width: 90vw;
+        height: auto;
+        padding-left: 0px;
+        position: relative;
+        right: 20px;
+    }
+
+    .portContainers {
+        flex-direction: column; 
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .itemTwo{
+        margin-top: 20px;
+    }
+    .itemThree{
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    .portItem{
+        width: 100%;
+    }
+
+    .portImages{
+        width: 80vw;
+        height: 80vw;
+        border-radius: 25px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+    .portItem h3{
+        padding: 10px 15px;
+        bottom: 60px;
+        left: 70vw;
+    }
+
+    .about p {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    nav {
+        font-size: .75rem;
+    }
+
+    .portItem h3{
+        padding: 10px 15px;
+        bottom: 60px;
+        left: 60vw;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    nav {
+        font-size: .5rem;
+    }
+    
+    .portItem h3{
+        padding: 10px 10px;
+        bottom: 30px;
+        left: 65vw;
+    }
+
+    .about p {
+        max-width: 200px;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        margin-top: 20px;
+    }
+
+    .about {
+        margin-top: 50px;
+    }
 }
